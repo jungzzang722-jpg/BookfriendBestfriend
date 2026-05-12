@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>책친구</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -264,7 +267,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
     </div>
     <div style="font-size:13px;color:var(--br);opacity:.52;line-height:1.5;padding-bottom:14px">기분에 딱 맞는 책 한 줄을 보내줄게.</div>
   </div>
-  <div style="flex:1;overflow:hidden;padding:0 20px">
+  <div style="flex:1;overflow:hidden;padding:0 20px calc(var(--sab) + 16px)">
     <div class="egrid" id="s7g" style="height:calc(100% - 12px);margin-top:8px;max-width:480px;margin-left:auto;margin-right:auto;grid-template-rows:repeat(3,1fr)">
       <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">🐣</div><div class="ecard-text">뭔가 찜찜하게<br>끝난 것 같은</div></div>
       <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">🫣</div><div class="ecard-text">아무 일도 없었는데<br>괜히 지친</div></div>
@@ -272,14 +275,6 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">😪</div><div class="ecard-text">그냥 빨리<br>자고 싶은</div></div>
       <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">🔥</div><div class="ecard-text">뭔가 잘 되고<br>싶은</div></div>
       <div class="ecard blank" onclick="pickCard(this)"><div class="ecard-icon" style="text-align:center;width:100%">✏️</div><div class="ecard-text">직접 입력하기</div></div>
-    </div>
-  </div>
-  <!-- BOTTOM NAV · 홈 active -->
-  <div class="bnav">
-    <div class="bnav-row">
-      <div class="bni on" onclick="goTo(7)"><div class="bni-ic">🏠</div><div class="bni-lb">홈</div></div>
-      <div class="bni" onclick="goTo(12)"><div class="bni-ic">💌</div><div class="bni-lb">보관함</div></div>
-      <div class="bni" onclick="goTo(18)"><div class="bni-ic">⚙️</div><div class="bni-lb">설정</div></div>
     </div>
   </div>
 </div>

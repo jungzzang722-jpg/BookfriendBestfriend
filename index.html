@@ -108,8 +108,8 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 .mhandle{width:40px;height:4px;background:var(--lb);border-radius:2px;margin:0 auto 22px}
 
 /* lock / launcher */
-.lockbg{position:absolute;inset:0;background:linear-gradient(160deg,#2C1A0A,#1A0D05);display:flex;flex-direction:column;padding:calc(var(--sat)+40px) 18px calc(var(--sab)+40px)}
-.launchbg{position:absolute;inset:0;background:linear-gradient(155deg,#2a1a0e,#150c05 55%,#0d091a);display:flex;flex-direction:column;padding:calc(var(--sat)+44px) 20px calc(var(--sab)+28px)}
+.lockbg{position:absolute;inset:0;background:linear-gradient(160deg,#2C1A0A,#1A0D05);display:flex;flex-direction:column;padding:calc(var(--sat) + 40px) 18px calc(var(--sab) + 40px)}
+.launchbg{position:absolute;inset:0;background:linear-gradient(155deg,#2a1a0e,#150c05 55%,#0d091a);display:flex;flex-direction:column;padding:calc(var(--sat) + 44px) 20px calc(var(--sab) + 28px)}
 .appgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0 8px;align-content:start;flex:1}
 .aiw{display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer}
 .aib{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px}
@@ -215,7 +215,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S5 · OB4 emotion preview ═══ -->
 <div class="screen" id="s5" onclick="goTo(6)" style="cursor:pointer">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+22px) 20px 14px">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 22px) 20px 14px">
     <div style="font-size:25px;font-weight:700;color:var(--dk);line-height:1.38">오늘 기분을<br>하나 골라봐.</div>
   </div>
   <div class="body cx" style="padding:4px 20px;pointer-events:none;opacity:.82">
@@ -228,7 +228,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div class="ecard blank"><div class="ecard-icon" style="text-align:center">✏️</div><div class="ecard-text">직접 입력하기</div></div>
     </div>
   </div>
-  <div class="cx" style="flex-shrink:0;padding:12px 20px calc(var(--sab)+24px)">
+  <div class="cx" style="flex-shrink:0;padding:12px 20px calc(var(--sab) + 24px)">
     <div class="dots" style="margin-bottom:14px"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div>
     <div style="text-align:center;font-size:12px;color:var(--br);opacity:.4">탭해서 계속</div>
   </div>
@@ -236,7 +236,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S6 · OB5 letter preview + 시작하기 ═══ -->
 <div class="screen" id="s6">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+22px) 20px 16px">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 22px) 20px 16px">
     <div style="font-size:11px;color:var(--bg);letter-spacing:2.5px;margin-bottom:10px">STEP 02</div>
     <div style="font-size:25px;font-weight:700;color:var(--dk);line-height:1.38">책친구가<br>편지를 보내줄게.</div>
     <div style="font-size:13px;color:var(--br);margin-top:8px;opacity:.65;line-height:1.62">감정에 맞는 책의 한 줄이 따뜻하게 도착해.</div>
@@ -249,7 +249,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div class="lcomment">오늘 묻어뒀던 그 감정, 이 한 줄이 꺼내줄 수 있을 거야. 혼자가 아니야. 🤍</div>
     </div>
   </div>
-  <div class="cx" style="flex-shrink:0;padding:14px 20px calc(var(--sab)+32px)">
+  <div class="cx" style="flex-shrink:0;padding:14px 20px calc(var(--sab) + 32px)">
     <div class="dots" style="margin-bottom:14px"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot on"></div></div>
     <button class="btn" onclick="goTo(7)">시작하기</button>
   </div>
@@ -257,7 +257,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S7 · HOME 감정 선택 ═══ -->
 <div class="screen" id="s7">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+16px) 20px 0">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 16px) 20px 0">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px">
       <div style="font-size:22px;font-weight:700;color:var(--dk);line-height:1.32">오늘 기분을 하나 골라봐.</div>
       <div style="font-size:11px;color:var(--br);opacity:.48;white-space:nowrap;flex-shrink:0">5월 12일 화</div>
@@ -287,7 +287,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 <!-- ═══ S8 · HOME 오늘의 편지 ═══ -->
 <div class="screen" id="s8">
   <!-- 헤더 영역 -->
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+10px) 20px 0">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 10px) 20px 0">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
       <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
         <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -328,7 +328,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S9 · CHATBOT 시작 ═══ -->
 <div class="screen" id="s9">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--lb)">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--lb)">
     <div class="back" onclick="goTo(8)">←</div>
     <div style="width:36px;height:36px;background:var(--bg);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📖</div>
     <div style="flex:1">
@@ -363,7 +363,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S10 · CHATBOT 대화 중 ═══ -->
 <div class="screen" id="s10">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--lb)">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--lb)">
     <div class="back" onclick="goTo(9)">←</div>
     <div style="width:36px;height:36px;background:var(--bg);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📖</div>
     <div><div style="font-size:15px;font-weight:600;color:var(--dk)">책친구</div><div style="font-size:11px;color:var(--br);opacity:.58">대화 중 · 🟢</div></div>
@@ -400,7 +400,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S11 · CHATBOT 마무리 ═══ -->
 <div class="screen" id="s11">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--lb)">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 13px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--lb)">
     <div class="back" onclick="goTo(10)">←</div>
     <div style="width:36px;height:36px;background:var(--bg);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📖</div>
     <div><div style="font-size:15px;font-weight:600;color:var(--dk)">책친구</div><div style="font-size:11px;color:var(--br);opacity:.58">대화 마무리</div></div>
@@ -433,14 +433,14 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div style="font-size:11px;color:var(--br);opacity:.58;margin-top:6px">『아몬드』— 손원평 · 보관함에서 보기 →</div>
     </div>
   </div>
-  <div class="cx" style="flex-shrink:0;padding:14px 18px calc(var(--sab)+28px)">
+  <div class="cx" style="flex-shrink:0;padding:14px 18px calc(var(--sab) + 28px)">
     <button class="btn ghost" onclick="goTo(8)">홈으로 돌아가기</button>
   </div>
 </div>
 
 <!-- ═══ S12 · ARCHIVE 보관된 편지 #1 ═══ -->
 <div class="screen" id="s12">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 10px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 10px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -496,7 +496,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S13 · ARCHIVE 보관된 편지 #2 ═══ -->
 <div class="screen" id="s13">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 10px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 10px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -547,7 +547,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S14 · ARCHIVE 보관된 편지 상세 ═══ -->
 <div class="screen" id="s14">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 10px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 10px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -605,7 +605,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 <div class="screen" id="s15">
   <div class="body cx" style="padding-bottom:100px">
     <div class="bcover">
-      <div style="position:absolute;top:calc(var(--sat)+14px);left:18px;z-index:10">
+      <div style="position:absolute;top:calc(var(--sat) + 14px);left:18px;z-index:10">
         <div class="back" onclick="goTo(8)" style="background:rgba(255,255,255,.15);backdrop-filter:blur(8px)">←</div>
       </div>
       <div style="width:112px;height:160px;background:rgba(255,255,255,.1);border-radius:4px 8px 8px 4px;border-left:5px solid rgba(255,255,255,.16);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
@@ -623,19 +623,19 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div style="text-align:center;margin-top:14px;font-size:12px;color:var(--bg);cursor:pointer;opacity:.7" onclick="goTo(16)">독자 리뷰 보기 →</div>
     </div>
   </div>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 20px calc(var(--sab)+24px);background:linear-gradient(to top,var(--cr) 80%,transparent)">
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 20px calc(var(--sab) + 24px);background:linear-gradient(to top,var(--cr) 80%,transparent)">
     <div class="cx"><button class="btn" onclick="goTo(17)">읽으러 가기</button></div>
   </div>
 </div>
 
 <!-- ═══ S16 · BOOK 스크롤 (리뷰) ═══ -->
 <div class="screen" id="s16">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 13px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--lb)">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 13px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--lb)">
     <div class="back" onclick="goTo(15)">←</div>
     <div style="font-size:17px;font-weight:600;color:var(--dk)">아몬드</div>
     <div style="font-size:13px;color:var(--br);opacity:.55">— 손원평</div>
   </div>
-  <div class="body cx" style="padding:16px 20px calc(var(--sab)+90px)">
+  <div class="body cx" style="padding:16px 20px calc(var(--sab) + 90px)">
     <div style="display:flex;align-items:center;gap:5px;margin-bottom:18px">
       <span style="font-size:15px">⭐⭐⭐⭐⭐</span>
       <span style="font-size:14px;font-weight:600;color:var(--dk)">4.8</span>
@@ -665,7 +665,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div style="font-size:11px;color:var(--br);opacity:.48">서아* · 2025년 8월</div>
     </div>
   </div>
-  <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 20px calc(var(--sab)+24px);background:linear-gradient(to top,var(--cr) 80%,transparent)">
+  <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 20px calc(var(--sab) + 24px);background:linear-gradient(to top,var(--cr) 80%,transparent)">
     <div class="cx"><button class="btn" onclick="goTo(17)">읽으러 가기</button></div>
   </div>
 </div>
@@ -701,7 +701,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S18 · SETTINGS ═══ -->
 <div class="screen" id="s18">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 16px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 16px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -752,10 +752,10 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 <!-- ═══ S19 · NOTIFICATION ═══ -->
 <div class="screen" id="s19" style="background:#1A0D05">
   <div class="lockbg">
-    <div style="position:absolute;top:calc(var(--sat)+16px);left:18px" onclick="goTo(18)">
+    <div style="position:absolute;top:calc(var(--sat) + 16px);left:18px" onclick="goTo(18)">
       <div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:5px 12px;font-size:11px;color:rgba(255,255,255,.52);cursor:pointer">← 설정으로</div>
     </div>
-    <div style="position:absolute;top:calc(var(--sat)+16px);right:18px" onclick="goTo(20)">
+    <div style="position:absolute;top:calc(var(--sat) + 16px);right:18px" onclick="goTo(20)">
       <div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:5px 12px;font-size:11px;color:rgba(255,255,255,.52);cursor:pointer">앱 아이콘 →</div>
     </div>
     <div style="text-align:center;margin-bottom:36px">
@@ -773,21 +773,21 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
         <div style="font-size:13px;color:rgba(255,255,255,.68);line-height:1.52">"세상은 나 없이도 잘 돌아갔고, 나는 그 틈에서 조용히 숨을 쉬고 있었다." — 손원평</div>
       </div>
     </div>
-    <div style="position:absolute;bottom:calc(var(--sab)+80px);left:0;right:0;display:flex;justify-content:center;gap:60px">
+    <div style="position:absolute;bottom:calc(var(--sab) + 80px);left:0;right:0;display:flex;justify-content:center;gap:60px">
       <div style="color:rgba(255,255,255,.35);font-size:26px">🔦</div>
       <div style="color:rgba(255,255,255,.35);font-size:26px">📷</div>
     </div>
-    <div style="position:absolute;bottom:calc(var(--sab)+42px);left:0;right:0;text-align:center;font-size:12px;color:rgba(255,255,255,.28);letter-spacing:.5px">위로 쓸어올려 잠금 해제</div>
+    <div style="position:absolute;bottom:calc(var(--sab) + 42px);left:0;right:0;text-align:center;font-size:12px;color:rgba(255,255,255,.28);letter-spacing:.5px">위로 쓸어올려 잠금 해제</div>
   </div>
 </div>
 
 <!-- ═══ S20 · APP LAUNCHER ═══ -->
 <div class="screen" id="s20">
   <div class="launchbg">
-    <div style="position:absolute;top:calc(var(--sat)+16px);left:18px" onclick="goTo(19)">
+    <div style="position:absolute;top:calc(var(--sat) + 16px);left:18px" onclick="goTo(19)">
       <div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:5px 12px;font-size:11px;color:rgba(255,255,255,.52);cursor:pointer">← 잠금화면</div>
     </div>
-    <div style="position:absolute;top:calc(var(--sat)+16px);right:18px" onclick="goTo(1)">
+    <div style="position:absolute;top:calc(var(--sat) + 16px);right:18px" onclick="goTo(1)">
       <div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:5px 12px;font-size:11px;color:rgba(255,255,255,.52);cursor:pointer">처음으로 →</div>
     </div>
     <div style="text-align:center;margin-bottom:32px">
@@ -840,11 +840,11 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S21 · 직접 입력하기 ═══ -->
 <div class="screen" id="s21">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 20px 8px;display:flex;align-items:center;gap:10px">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 20px 8px;display:flex;align-items:center;gap:10px">
     <div class="back" onclick="goTo(7)">←</div>
     <div style="font-size:15px;font-weight:600;color:var(--dk)">직접 입력하기</div>
   </div>
-  <div class="body cx" style="padding:8px 20px calc(var(--sab)+32px)">
+  <div class="body cx" style="padding:8px 20px calc(var(--sab) + 32px)">
     <div style="font-size:24px;font-weight:700;color:var(--dk);margin-bottom:6px;line-height:1.38">오늘 감정을<br>직접 써봐.</div>
     <div style="font-size:13.5px;color:var(--br);opacity:.62;margin-bottom:20px;line-height:1.65">어떤 말도 괜찮아. 여기는 아무도 안 봐. 😌</div>
     <div style="background:#fff;border-radius:18px;padding:18px 20px;box-shadow:0 2px 16px rgba(62,32,16,.07);margin-bottom:18px">
@@ -881,14 +881,14 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S23 · 나의 기록 ═══ -->
 <div class="screen" id="s23">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 14px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 14px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
     </div>
   </div>
-  <div class="body cx" style="padding:0 18px calc(var(--sab)+80px)">
+  <div class="body cx" style="padding:0 18px calc(var(--sab) + 80px)">
     <!-- 요약 스탯 -->
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:20px">
       <div style="background:#fff;border-radius:18px;padding:18px 10px;text-align:center;box-shadow:0 2px 12px rgba(62,32,16,.06)">
@@ -979,7 +979,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S24 · ARCHIVE 보관된 편지 #4 (자고 싶은) ═══ -->
 <div class="screen" id="s24">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 10px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 10px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -996,7 +996,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div class="chip" style="cursor:pointer;flex-shrink:0" onclick="goTo(26)">✏️ 직접 입력</div>
     </div>
   </div>
-  <div class="body cx" style="padding:0 18px calc(var(--sab)+90px)">
+  <div class="body cx" style="padding:0 18px calc(var(--sab) + 90px)">
     <div class="qcard" style="margin-bottom:14px">
       <span class="qmark">"</span>
       <div class="qtext">오늘 하루도 수고했어. 이제 눈 감아도 돼.</div>
@@ -1028,7 +1028,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S25 · ARCHIVE 보관된 편지 #5 (잘 되고 싶은) ═══ -->
 <div class="screen" id="s25">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 10px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 10px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -1045,7 +1045,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div class="chip" style="cursor:pointer;flex-shrink:0" onclick="goTo(26)">✏️ 직접 입력</div>
     </div>
   </div>
-  <div class="body cx" style="padding:0 18px calc(var(--sab)+90px)">
+  <div class="body cx" style="padding:0 18px calc(var(--sab) + 90px)">
     <div class="qcard" style="margin-bottom:14px">
       <span class="qmark">"</span>
       <div class="qtext">원하는 것이 있다는 것 자체가, 이미 앞으로 나아가고 있다는 뜻이다.</div>
@@ -1077,7 +1077,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 
 <!-- ═══ S26 · ARCHIVE 보관된 편지 #6 (직접 입력) ═══ -->
 <div class="screen" id="s26">
-  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat)+12px) 18px 10px;display:flex;align-items:center">
+  <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 12px) 18px 10px;display:flex;align-items:center">
     <div onclick="toggleMenu()" style="display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:3px 2px;flex-shrink:0">
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
       <div style="width:20px;height:2px;background:var(--br);border-radius:1px"></div>
@@ -1094,7 +1094,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
       <div class="chip" style="background:var(--bg);color:#fff;cursor:pointer;flex-shrink:0" onclick="goTo(26)">✏️ 직접 입력</div>
     </div>
   </div>
-  <div class="body cx" style="padding:0 18px calc(var(--sab)+90px)">
+  <div class="body cx" style="padding:0 18px calc(var(--sab) + 90px)">
     <div class="qcard" style="margin-bottom:14px">
       <span class="qmark">"</span>
       <div class="qtext">내가 쓴 말들은 내가 지나온 감정들의 지도야. 오늘도 그 지도에 한 줄을 더했어.</div>
@@ -1131,7 +1131,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
   <div onclick="closeMenu()" style="position:absolute;inset:0;background:rgba(15,6,2,.42)"></div>
   <div style="position:absolute;top:0;left:0;bottom:0;width:272px;max-width:82vw;background:var(--cr);display:flex;flex-direction:column;animation:slideInL .24s ease">
     <!-- 헤더 -->
-    <div style="padding:calc(var(--sat)+22px) 22px 18px;border-bottom:1px solid var(--lb);display:flex;align-items:center;justify-content:space-between">
+    <div style="padding:calc(var(--sat) + 22px) 22px 18px;border-bottom:1px solid var(--lb);display:flex;align-items:center;justify-content:space-between">
       <div>
         <div style="font-size:22px;font-weight:600;color:var(--dk);letter-spacing:3px">책친구</div>
         <div style="font-size:11px;color:var(--br);opacity:.52;margin-top:2px">오늘의 감정에 맞는 한 줄</div>
@@ -1173,7 +1173,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
         <span style="font-size:19px">📱</span><span style="font-size:15px;color:var(--dk)">앱 런처</span>
       </div>
     </div>
-    <div style="padding:14px 22px calc(var(--sab)+16px);border-top:1px solid var(--lb)">
+    <div style="padding:14px 22px calc(var(--sab) + 16px);border-top:1px solid var(--lb)">
       <div onclick="goTo(1);closeMenu()" style="font-size:12px;color:var(--br);opacity:.5;cursor:pointer;text-align:center">처음으로 돌아가기</div>
     </div>
   </div>

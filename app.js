@@ -82,3 +82,83 @@ function quickEmotion(emotion){
     goTo(8);
   },2200);
 }
+const sendBtn =
+document.getElementById("sendBtn");
+
+const chatInput =
+document.getElementById("chatInput");
+
+const chat =
+document.getElementById("chat");
+
+sendBtn.addEventListener("click", sendMessage);
+
+chatInput.addEventListener("keypress", function(e){
+
+  if(e.key === "Enter"){
+
+    sendMessage();
+
+  }
+
+});
+
+function sendMessage(){
+
+  const text =
+  chatInput.value.trim();
+
+  if(!text) return;
+
+  // 사용자 메시지 추가
+  const userMsg =
+  document.createElement("div");
+
+  userMsg.className =
+  "cmsg user";
+
+  userMsg.innerHTML = `
+    <div class="cbubble">
+      ${text}
+    </div>
+    <div class="ctime">
+      지금
+    </div>
+  `;
+
+  chat.appendChild(userMsg);
+
+  // 입력창 비우기
+  chatInput.value = "";
+
+  // 아래로 스크롤
+  chat.scrollTop =
+  chat.scrollHeight;
+
+  // 책친구 답장
+  setTimeout(()=>{
+
+    const botMsg =
+    document.createElement("div");
+
+    botMsg.className =
+    "cmsg bot";
+
+    botMsg.innerHTML = `
+      <div class="cbubble">
+        그런 마음이 들었구나. 🤍
+        조금 더 이야기해줄래?
+      </div>
+      <div class="ctime">
+        지금
+      </div>
+    `;
+
+    chat.appendChild(botMsg);
+
+    chat.scrollTop =
+    chat.scrollHeight;
+
+  },800);
+
+}

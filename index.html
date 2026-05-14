@@ -316,24 +316,122 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
 </div>
 
 <!-- ═══ S7 · HOME 감정 선택 ═══ -->
+<!-- ═════════════ S7 · HOME 감정 선택 ═════════════ -->
 <div class="screen" id="s7">
+
   <div class="cx" style="flex-shrink:0;padding:calc(var(--sat) + 16px) 20px 0">
+
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px">
-      <div style="font-size:22px;font-weight:700;color:var(--dk);line-height:1.32">오늘 기분을 하나 골라봐.</div>
-      <div style="font-size:11px;color:var(--br);opacity:.48;white-space:nowrap;flex-shrink:0">5월 12일 화</div>
+      <div style="font-size:22px;font-weight:700;color:var(--dk);line-height:1.32">
+        오늘 기분을 하나 골라봐.
+      </div>
+
+      <div style="font-size:11px;color:var(--br);opacity:.48;white-space:nowrap">
+        5월 12일 화
+      </div>
     </div>
-    <div style="font-size:13px;color:var(--br);opacity:.52;line-height:1.5;padding-bottom:14px">기분에 딱 맞는 책 한 줄을 보내줄게.</div>
+
+    <div style="font-size:13px;color:var(--br);opacity:.52;line-height:1.5;padding-bottom:14px">
+      기분에 딱 맞는 책 한 줄을 보내줄게.
+    </div>
+
   </div>
+
   <div style="flex:1;overflow:hidden;padding:0 20px calc(var(--sab) + 16px)">
-    <div class="egrid" id="s7g" style="height:calc(100% - 12px);margin-top:8px;max-width:480px;margin-left:auto;margin-right:auto;grid-template-rows:repeat(3,1fr)">
-      <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">🐣</div><div class="ecard-text">뭔가 찜찜하게<br>끝난 것 같은</div></div>
-      <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">🫣</div><div class="ecard-text">아무 일도 없었는데<br>괜히 지친</div></div>
-      <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">💬</div><div class="ecard-text">누군가한테 말하고<br>싶은데 꺼내기 애매한</div></div>
-      <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">😪</div><div class="ecard-text">그냥 빨리<br>자고 싶은</div></div>
-      <div class="ecard" onclick="pickCard(this)"><div class="ecard-icon">🔥</div><div class="ecard-text">뭔가 잘 되고<br>싶은</div></div>
-      <div class="ecard blank" onclick="pickCard(this)"><div class="ecard-icon" style="text-align:center;width:100%">✏️</div><div class="ecard-text">직접 입력하기</div></div>
+
+    <div
+      class="egrid"
+      id="s7g"
+      style="
+        height:calc(100% - 12px);
+        margin-top:8px;
+        max-width:480px;
+        margin-left:auto;
+        margin-right:auto;
+        grid-template-rows:repeat(3,1fr)
+      "
+    >
+
+      <!-- 찜찜 -->
+      <div class="ecard" onclick="quickEmotion('찜찜')">
+
+        <div class="ecard-icon">🐣</div>
+
+        <div class="ecard-text">
+          뭔가 찜찜하게<br>
+          끝난 것 같은
+        </div>
+
+      </div>
+
+      <!-- 불안 -->
+      <div class="ecard" onclick="quickEmotion('불안')">
+
+        <div class="ecard-icon">😰</div>
+
+        <div class="ecard-text">
+          괜히 불안한<br>
+          밤
+        </div>
+
+      </div>
+
+      <!-- 외로움 -->
+      <div class="ecard" onclick="quickEmotion('외로움')">
+
+        <div class="ecard-icon">💬</div>
+
+        <div class="ecard-text">
+          혼자인 기분이<br>
+          드는
+        </div>
+
+      </div>
+
+      <!-- 지침 -->
+      <div class="ecard" onclick="quickEmotion('지침')">
+
+        <div class="ecard-icon">😪</div>
+
+        <div class="ecard-text">
+          이유 없이<br>
+          지친 하루
+        </div>
+
+      </div>
+
+      <!-- 위로 -->
+      <div class="ecard" onclick="quickEmotion('위로')">
+
+        <div class="ecard-icon">🤍</div>
+
+        <div class="ecard-text">
+          위로받고 싶은<br>
+          밤
+        </div>
+
+      </div>
+
+      <!-- 직접 입력 -->
+      <div class="ecard blank" onclick="goTo(21)">
+
+        <div
+          class="ecard-icon"
+          style="text-align:center;width:100%"
+        >
+          ✏️
+        </div>
+
+        <div class="ecard-text">
+          직접 입력하기
+        </div>
+
+      </div>
+
     </div>
+
   </div>
+
 </div>
 
 <!-- ═══ S8 · HOME 오늘의 편지 ═══ -->
@@ -389,7 +487,7 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
     </div>
     <div class="chip" style="font-size:11px;padding:5px 10px">🐣 찜찜</div>
   </div>
-  <div class="chatbody cx">
+  <div class="chatbody cx" id="chat">
     <div style="text-align:center;font-size:11px;color:var(--br);opacity:.38;padding:6px 0">오늘 오후 9:12</div>
     <!-- 오늘의 인용구 카드 -->
     <div class="cmsg bot">
@@ -408,8 +506,13 @@ html,body{width:100%;height:100%;height:100dvh;overflow:hidden;font-family:syste
     <div class="cx" style="padding:0"><div class="cguide">💡 오늘 유독 머릿속에 남는 장면이 있어?</div></div>
   </div>
   <div class="cinputbar cx">
-    <input class="cinput" type="text" placeholder="솔직하게 말해봐..." readonly onclick="goTo(10)">
-    <div class="csend" onclick="goTo(10)">↑</div>
+    <input
+class="cinput"
+id="chatInput"
+type="text"
+placeholder="솔직하게 말해봐..."
+>
+    <div class="csend" id="sendBtn">↑</div>
   </div>
 </div>
 
@@ -1329,5 +1432,6 @@ function closeMenu(){
   document.getElementById('navmenu').style.display='none';
 }
 </script>
+<script src="app.js"></script>
 </body>
 </html>

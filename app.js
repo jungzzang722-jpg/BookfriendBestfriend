@@ -162,3 +162,95 @@ function sendMessage(){
   },800);
 
 }
+window.addEventListener("DOMContentLoaded", ()=>{
+
+  const sendBtn =
+  document.getElementById("sendBtn");
+
+  const chatInput =
+  document.getElementById("chatInput");
+
+  const chat =
+  document.getElementById("chat");
+
+  function sendMessage(){
+
+    const text =
+    chatInput.value.trim();
+
+    if(!text) return;
+
+    // 사용자 메시지 생성
+    const userMsg =
+    document.createElement("div");
+
+    userMsg.className =
+    "cmsg user";
+
+    userMsg.innerHTML = `
+      <div class="cbubble">
+        ${text}
+      </div>
+      <div class="ctime">
+        지금
+      </div>
+    `;
+
+    chat.appendChild(userMsg);
+
+    // 입력창 초기화
+    chatInput.value = "";
+
+    // 스크롤 아래로
+    chat.scrollTop =
+    chat.scrollHeight;
+
+    // 봇 답변
+    setTimeout(()=>{
+
+      const botMsg =
+      document.createElement("div");
+
+      botMsg.className =
+      "cmsg bot";
+
+      botMsg.innerHTML = `
+        <div class="cbubble">
+          그런 마음이 들었구나. 🤍
+          조금 더 이야기해줄래?
+        </div>
+        <div class="ctime">
+          지금
+        </div>
+      `;
+
+      chat.appendChild(botMsg);
+
+      chat.scrollTop =
+      chat.scrollHeight;
+
+    },700);
+
+  }
+
+  // 버튼 클릭
+  sendBtn.addEventListener(
+    "click",
+    sendMessage
+  );
+
+  // 엔터 입력
+  chatInput.addEventListener(
+    "keypress",
+    function(e){
+
+      if(e.key === "Enter"){
+
+        sendMessage();
+
+      }
+
+    }
+  );
+
+});
